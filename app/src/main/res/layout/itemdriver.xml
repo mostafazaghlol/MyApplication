@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_imageDriver"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/profile_imageDriver"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_image"
+        android:text="mostafa zaghloul"
+        android:id="@+id/usernameDriver"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="5dp">
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/profile_imageDriver"
+           android:text="from"
+           android:textColor="@color/offblack"
+           android:textAppearance="?android:textAppearance"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/profile_imageDriver"
+           android:text="to"
+           android:textColor="@color/offblack"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textAppearance="?android:textAppearanceSmall"
+           android:textStyle="bold" />
+   </LinearLayout>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/profile_imageDriver"
+           android:text="mostafa zaghloul"
+           android:textColor="@color/offblack"
+           android:id="@+id/fromDriver"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textAppearance="?android:textAppearance"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/profile_image"
+           android:text="mostafa zaghloul"
+           android:textColor="@color/offblack"
+           android:id="@+id/toDriver"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textAppearance="?android:textAppearance"
+           android:textStyle="bold" />
+   </LinearLayout>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:id="@+id/last">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/profile_image"
+           android:text="created at 2018-11-21 12:36:43"
+           android:textColor="@color/offblack"
+           android:layout_gravity="center"
+           android:id="@+id/createdatDriver"
+           android:gravity="center"
+           android:textAppearance="?android:textAppearance"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/profile_image"
+           android:text="trip at 2018-11-30 10:05:10"
+           android:textColor="@color/offblack"
+           android:layout_gravity="center"
+           android:id="@+id/tripatDriver"
+           android:gravity="center"
+           android:textAppearance="?android:textAppearance"
+           android:textStyle="bold" />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chat"
+            android:id="@+id/chat"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Me"
+            android:id="@+id/pickMe"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+</RelativeLayout>
